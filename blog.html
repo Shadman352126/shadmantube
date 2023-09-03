@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- favicon linking here -->
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    
+    <!-- daisyui & tailwindcss linking here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="my-20 mx-20">
+    <h1 class="text-5xl font-bold text-center mb-5">FAQ</h1>
+    <hr>
+    <div class="container mt-10 m-auto space-y-4">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-xl font-medium">
+                Discuss the scope of var, let, and const
+            </div>
+            <div class="collapse-content"> 
+              <h3 class="font-bold">Explanation :</h3>
+              <ul class="list-disc ml-5">
+                <li>var declarations are globally scoped or function scoped while let and const are block scoped.</li>
+                <li>var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.</li>
+                <li>They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.</li>
+                <li>While var and let can be declared without being initialized, const must be initialized during declaration.</li>
+                <li>In the var tab, when you will run the code, you will see an error as a is not defined because var variables are only accessible in the function scope.</li>
+                <li>In the let tab, when you run the code, you will see an error as i is not defined because let variables are only accessible within the block they are declared.</li>
+                <li>In the const tab, when you run the code, you will see that x was defined under the block was accessible, but when you try to access x outside that block, you will get an error.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-xl font-medium">
+                Tell us the use cases of null and undefined
+            </div>
+            <div class="collapse-content"> 
+              <h3 class="font-bold">Null :</h3>
+              <ul class="list-disc ml-5">
+                <li>Null means an empty value or a blank value.</li>
+                <li>The typeof() operator returns the type as an object for a variable whose value is assigned as null.</li>
+                <li>converts to 0 then perform the operation</li>
+                <li>As we assign null to a variable, it is an assignment value.</li>
+              </ul>
+              <br>
+              <h3 class="font-bold">Undefined :</h3>
+              <ul class="list-disc ml-5">
+                <li>Undefined means the variable has been declared, but its value has not been assigned.</li>
+                <li>The typeof() operator returns undefined for an undefined variable.</li>
+                <li>It returns NaN on performing arithmetic operations.</li>
+                <li>As there is no value assigned to the variable, it becomes undefined.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" /> 
+            <div class="collapse-title text-xl font-medium">
+                What do you mean by REST API?
+            </div>
+            <div class="collapse-content"> 
+              <p>A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.</p>
+              <br>
+              <p>Some APIs, such as SOAP or XML-RPC, impose a strict framework on developers. But REST APIs can be developed using virtually any programming language and support a variety of data formats. The only requirement is that they align to the following six REST design principles - also known as architectural constraints:</p>
+              <br>
+              <ol class="list-decimal ml-5">
+                <li><span class="font-bold">Uniform interface:</span> All API requests for the same resource should look the same, no matter where the request comes from. The REST API should ensure that the same piece of data, such as the name or email address of a user, belongs to only one uniform resource identifier (URI). Resources shouldn’t be too large but should contain every piece of information that the client might need.</li>
+                <li><span class="font-bold">Client-server decoupling:</span> In REST API design, client and server applications must be completely independent of each other. The only information the client application should know is the URI of the requested resource; it can't interact with the server application in any other ways. Similarly, a server application shouldn't modify the client application other than passing it to the requested data via HTTP.</li>
+                <li><span class="font-bold">Statelessness:</span> REST APIs are stateless, meaning that each request needs to include all the information necessary for processing it. In other words, REST APIs do not require any server-side sessions. Server applications aren’t allowed to store any data related to a client request.
+                </li>
+                <li><span class="font-bold">Cacheability:</span> When possible, resources should be cacheable on the client or server side. Server responses also need to contain information about whether caching is allowed for the delivered resource. The goal is to improve performance on the client side, while increasing scalability on the server side.</li>
+                <li><span class="font-bold">Layered system architecture:</span> In REST APIs, the calls and responses go through different layers. As a rule of thumb, don’t assume that the client and server applications connect directly to each other. There may be a number of different intermediaries in the communication loop. REST APIs need to be designed so that neither the client nor the server can tell whether it communicates with the end application or an intermediary.</li>
+              </ol>
+            </div>
+          </div>
+    </div>
+
+    <div class="flex justify-center mt-10">
+        <a href="index.html"><button class="btn bg-[#FF1F3D] text-white">Home</button></a>
+    </div>
+</body>
+</html>
